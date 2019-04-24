@@ -1,3 +1,8 @@
+import "./main.css";
+import Fireworks from 'fireworks-canvas';
+ 
 export default () => {
-    alert('hello');
-  };
+  const container = document.getElementById('container');
+  const fireworks = new Fireworks(container);
+  fireworks.start();
+};
